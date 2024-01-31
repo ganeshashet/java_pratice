@@ -1,0 +1,33 @@
+package javaLab1;
+
+import java.util.Scanner;
+
+public class camelCase {
+
+	public static void main(String[] args) {
+	
+	
+		     StringBuffer str=new StringBuffer("oneTwoThree");
+		    String word=(string) convertCamelCaseToLowerCase(str);
+		     
+		     
+		    }
+
+	private static StringBuffer convertCamelCaseToLowerCase(StringBuffer str) {
+		
+		for(int i=0;i<str.length();i++) {
+			Character c=str.charAt(i);
+			if(Character.isLowerCase(c)) {
+				str.setCharAt(i , Character.toUpperCase(c));
+			}
+			else {
+				str.setCharAt(i , Character.toLowerCase(c));
+				
+			}
+		}
+		return str;
+	}
+
+		
+
+}
